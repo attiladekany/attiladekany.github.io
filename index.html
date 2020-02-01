@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple keyframe</title>
+</head>
+<body>
+
+<style>
+html{
+    -webkit-animation: background-changer 9s infinite;
+
+}
+@-webkit-keyframes background-changer{
+    25%{ background-color: red;}
+    50%{ background-color: black;}
+    75%{ background-color: #004C80;}
+}
+div{
+    position: absolute;
+    top:10%;
+    left:10%;
+    width: 20%;
+    height: 20%;
+    background: red;
+
+    animation: circle-path 9s infinite;
+    -webkit-animation: circle-path 9s infinite;
+    -moz-animation: circle-path 9s infinite;
+    -ms-animation: circle-path 9s infinite;
+    -o-animation: circle-path 9s infinite;
+}
+
+@-webkit-keyframes circle-path{
+   25%{ top: 10%;
+        left: 70%;
+        border-radius: 50%;
+        background-color: black;}
+   50%{ top: 70%;
+        left: 70%;
+        border-radius: 0%;
+        background-color: #004C80;}
+   75%{ top: 70%;
+        left: 10%;
+        border-radius: 50%;
+        background-color: #E6B800;}
+   100%{ top: 10%;
+        left: 10%;}
+
+}
+
+</style>
+
+  <div></div>
+
+
+</body>
+</html>
